@@ -12,6 +12,9 @@
         </el-option>
       </el-select>
       页面别名：<el-input v-model="params.pageAliase"  style="width: 100px"></el-input>
+<!--      页面名称：<el-input v-model="params.pageName"  style="width: 100px"></el-input>
+todo:这个需求暂时还没想出来
+      页面类型：<el-input v-model="params.pageType"  style="width: 100px"></el-input>-->
       <el-button type="primary" v-on:click="query"  size="small" >查询</el-button>
    <router-link :to="{path:'/cms/page/add/',query:{
       page:this.params.page,
